@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { connectWallet } from "./utils/interact";
 
 const Minter = (props) => {
 
@@ -35,7 +36,7 @@ const Minter = (props) => {
       </button>
 
       <br></br>
-      <h1 id="title">🧙‍♂️ Luke and Lizzy's NFT Minter</h1>
+      <h1 id="title">🧙‍♂️ FastMint: A fast way to mint your NFTs</h1>
       <p>
         Simply add your asset's link, name, and description, then press "Mint."
       </p>
