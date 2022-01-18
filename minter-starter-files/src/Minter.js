@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import { connectWallet } from "./utils/interact";
+import { 
+  connectWallet,
+  getCurrentWalletConnected // Import here
+ } from "./utils/interact.js";
 
 const Minter = (props) => {
 
