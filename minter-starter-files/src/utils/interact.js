@@ -70,6 +70,14 @@ export const mintNFT = async (url, name, description) => {
 
     // For loading smart contract
     window.contract = await new web3.eth.Contract(contractABI, contractAddress);
+
+    // Setting up Ethereum transaction
+    const transactionParameters = {
+        to: contractAddress, // Required except during contract publications
+        from: window.ethereum.selectedAddress, // Must match user's active address
+        'data': window.contract.methods.mintNFT(window.ethereum.selectedAddress, tokenURI).encodeABI() // Make call to NFT smart contract
+
+    };
 }
 
 export const getCurrentWalletConnected = async () => {
