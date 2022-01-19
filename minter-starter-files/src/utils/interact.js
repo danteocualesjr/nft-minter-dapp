@@ -67,6 +67,9 @@ export const mintNFT = async (url, name, description) => {
         }
     }
     const tokenURI = pinataResponse.pinataUrl;
+
+    // For loading smart contract
+    window.contract = await new web3.eth.Contract(contractABI, contractAddress);
 }
 
 export const getCurrentWalletConnected = async () => {
