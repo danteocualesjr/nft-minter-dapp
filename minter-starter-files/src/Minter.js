@@ -53,7 +53,8 @@ const Minter = (props) => {
   };
 
   const onMintPressed = async () => { //TODO: implement
-    
+    const { status } = await mintNFT (url, name, description);
+    setStatus(status);    
   };
 
   return (
