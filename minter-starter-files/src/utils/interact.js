@@ -44,7 +44,7 @@ export const connectWallet = async () => {
 }
 
 export const mintNFT = async (url, name, description) => {
-    
+
     // Error handling
     if (url.trim() == "" || (name.trim() == "" || description.trim() == "")) {
         return {
@@ -59,7 +59,7 @@ export const mintNFT = async (url, name, description) => {
     metadata.image = url;
     metadata.description = description;
 
-    // Make Pinata call
+    // Pinata pin request
     const pinataResponse = await pinJSONToIPFS(metadata);
     if (!pinataResponse.success) {
         return {
