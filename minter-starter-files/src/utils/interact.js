@@ -76,8 +76,25 @@ export const mintNFT = async (url, name, description) => {
         to: contractAddress, // Required except during contract publications
         from: window.ethereum.selectedAddress, // Must match user's active address
         'data': window.contract.methods.mintNFT(window.ethereum.selectedAddress, tokenURI).encodeABI() // Make call to NFT smart contract
-
     };
+
+    // Sign the transaction via MetaMask
+    try {
+        const txHash = await window.ethereum
+            .request({
+                method: 'eth_sendTransaction',
+                params: [transactionParameters],
+            });
+        return {
+            success: true,
+            status: "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" + txHash
+        }
+    }   catch (error) {
+            return {
+                success: false,
+                status: "😥 Something went wrong: " + error.message
+            }
+    }
 }
 
 export const getCurrentWalletConnected = async () => {
