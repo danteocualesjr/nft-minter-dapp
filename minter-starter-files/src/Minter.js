@@ -106,3 +106,5 @@ const Minter = (props) => {
 };
 
 export default Minter;
+
+// Deploy dApp to Heroku
