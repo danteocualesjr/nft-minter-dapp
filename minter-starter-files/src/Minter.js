@@ -6,6 +6,7 @@ import {
  } from "./utils/interact.js";
 
 const Minter = (props) => {
+  
   //State variables  
   const [walletAddress, setWallet] = useState("");
   const [status, setStatus] = useState("");
