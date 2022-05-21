@@ -19,10 +19,11 @@ const Minter = (props) => {
     setWallet(address);
     setStatus(status);    
     addWalletListener();
-    
+
   }, []);
 
   function addWalletListener() {
+    
     if (window.ethereum) {
       window.ethereum.on("accountsChanged", (accounts) => {
         if (accounts.length > 0) {
