@@ -19,7 +19,7 @@ const Minter = (props) => {
   const [url, setURL] = useState("");
  
   useEffect(async () => { //TODO: implement
-    
+
     const { address, status } = await getCurrentWalletConnected();
     setWallet(address);
     setStatus(status);    
@@ -28,6 +28,7 @@ const Minter = (props) => {
   }, []);
 
   function addWalletListener() {
+    
     if (window.ethereum) {
       window.ethereum.on("accountsChanged", (accounts) => {
         if (accounts.length > 0) {
