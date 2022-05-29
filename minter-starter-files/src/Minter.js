@@ -49,8 +49,7 @@ const Minter = (props) => {
           </a>
         </p>
       );
-    }
-    
+    }    
   }
 
   const connectWalletPressed = async () => { //TODO: implement    
