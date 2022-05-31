@@ -23,8 +23,7 @@ const Minter = (props) => {
     const { address, status } = await getCurrentWalletConnected();
     setWallet(address);
     setStatus(status);    
-    addWalletListener();
-    
+    addWalletListener();    
   }, []);
 
   function addWalletListener() {
