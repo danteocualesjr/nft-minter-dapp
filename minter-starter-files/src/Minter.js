@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
 import {   
-  
+
   connectWallet,
   getCurrentWalletConnected,
   mintNFT  
+  
  } from "./utils/interact.js";
 
 const Minter = (props) => {
