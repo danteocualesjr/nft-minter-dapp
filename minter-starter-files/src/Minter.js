@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {   
+  
   connectWallet,
   getCurrentWalletConnected,
   mintNFT    
@@ -19,7 +20,7 @@ const Minter = (props) => {
     setWallet(address);
     setStatus(status);    
     addWalletListener(); 
-    
+
   }, []);
 
   function addWalletListener() {
