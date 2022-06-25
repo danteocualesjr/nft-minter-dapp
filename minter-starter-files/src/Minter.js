@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import {  
 
   connectWallet,
@@ -47,7 +48,7 @@ const Minter = (props) => {
         </p>
       );
     }    
-    
+
   }
 
   const connectWalletPressed = async () => { //TODO: implement    
