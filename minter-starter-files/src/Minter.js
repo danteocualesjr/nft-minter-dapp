@@ -24,7 +24,7 @@ const Minter = (props) => {
     setWallet(address);
     setStatus(status);    
     addWalletListener(); 
-    
+
   }, []);
 
   function addWalletListener() {
@@ -115,7 +115,6 @@ const Minter = (props) => {
       </p>
     </div>
   );
-
 };
 
 export default Minter;
