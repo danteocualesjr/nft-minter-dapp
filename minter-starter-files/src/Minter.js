@@ -64,10 +64,11 @@ const Minter = (props) => {
 
     const { status } = await mintNFT (url, name, description);
     setStatus(status);       
-     
+
   };
 
   return (
+    
     <div className="Minter">
       <button id="walletButton" onClick={connectWalletPressed}>
         {walletAddress.length > 0 ? (
