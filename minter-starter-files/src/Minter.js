@@ -57,10 +57,11 @@ const Minter = (props) => {
     const walletResponse = await connectWallet();
     setStatus(walletResponse.status);
     setWallet(walletResponse.address);
-    
+
   };
 
   const onMintPressed = async () => { //TODO: implement
+    
     const { status } = await mintNFT (url, name, description);
     setStatus(status);        
   };
