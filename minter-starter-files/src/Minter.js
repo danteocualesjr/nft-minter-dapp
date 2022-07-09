@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import {
-  
+
   connectWallet,
   getCurrentWalletConnected,
   mintNFT   
@@ -108,7 +108,7 @@ const Minter = (props) => {
         />
       </form>
       <button id="mintButton" onClick={onMintPressed}>
-        Mint NFT
+        Mint that NFT!
       </button>
       <p id="status">
         {status}
