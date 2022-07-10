@@ -22,7 +22,6 @@ const Minter = (props) => {
   }, []);
 
   function addWalletListener() {
-
     if (window.ethereum) {
       window.ethereum.on("accountsChanged", (accounts) => {
         if (accounts.length > 0) {
