@@ -4,7 +4,7 @@ import {
   connectWallet,
   getCurrentWalletConnected,
   mintNFT
-  
+
 } from "./utils/interact.js";
 
 const Minter = (props) => {  
@@ -18,6 +18,7 @@ const Minter = (props) => {
   const [url, setURL] = useState("");
  
   useEffect(async () => { //TODO: implement
+    
     const { address, status } = await getCurrentWalletConnected();
     setWallet(address);
     setStatus(status);    
