@@ -4,12 +4,13 @@ import {
   connectWallet,
   getCurrentWalletConnected,
   mintNFT
-  
+
 } from "./utils/interact.js";
 
 const Minter = (props) => {  
 
-  //State variables       
+  //State variables
+         
   const [walletAddress, setWallet] = useState("");
   const [status, setStatus] = useState("");
   const [name, setName] = useState("");
