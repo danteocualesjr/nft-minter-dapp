@@ -27,7 +27,7 @@ const Minter = (props) => {
   }, []);
 
   function addWalletListener() {
-    
+
     if (window.ethereum) {
       window.ethereum.on("accountsChanged", (accounts) => {
         if (accounts.length > 0) {
@@ -53,6 +53,7 @@ const Minter = (props) => {
   }
 
   const connectWalletPressed = async () => { //TODO: implement    
+    
     const walletResponse = await connectWallet();
     setStatus(walletResponse.status);
     setWallet(walletResponse.address);
