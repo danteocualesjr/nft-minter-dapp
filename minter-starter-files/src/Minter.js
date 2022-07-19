@@ -8,7 +8,6 @@ import {
 const Minter = (props) => {  
 
   //State variables
-
   const [walletAddress, setWallet] = useState("");
   const [status, setStatus] = useState("");
   const [name, setName] = useState("");
