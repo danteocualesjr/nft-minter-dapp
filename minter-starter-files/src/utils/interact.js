@@ -48,7 +48,7 @@ export const connectWallet = async () => {
 export const mintNFT = async (url, name, description) => {
 
     // Error handling
-    
+
     if (url.trim() == "" || (name.trim() == "" || description.trim() == "")) {
         return {
             success: false,
@@ -57,6 +57,7 @@ export const mintNFT = async (url, name, description) => {
     }
 
     // Make metadata
+    
     const metadata = new Object();
     metadata.name = name;
     metadata.image = url;
