@@ -110,6 +110,7 @@ export const mintNFT = async (url, name, description) => {
 export const getCurrentWalletConnected = async () => {
 
     if (window.ethereum) {
+        
         try {
             const addressArray = await window.ethereum.request({
                 method: "eth.accounts",
