@@ -132,7 +132,7 @@ export const getCurrentWalletConnected = async () => {
                 status: "😥 " + err.message,
             };
         }
-        
+
     } else {
         return {
             address: "",
@@ -149,5 +149,4 @@ export const getCurrentWalletConnected = async () => {
             ),
         };
     }
-
 };
