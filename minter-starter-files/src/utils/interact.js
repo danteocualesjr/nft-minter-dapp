@@ -52,6 +52,7 @@ export const connectWallet = async () => {
 export const mintNFT = async (url, name, description) => {
 
     // Error handling
+    
     if (url.trim() == "" || (name.trim() == "" || description.trim() == "")) {
         return {
             success: false,
