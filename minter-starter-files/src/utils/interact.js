@@ -68,7 +68,7 @@ export const mintNFT = async (url, name, description) => {
     metadata.description = description;
 
     // Pinata pin request  
-          
+
     const pinataResponse = await pinJSONToIPFS(metadata);
     if (!pinataResponse.success) {
         return {
@@ -78,7 +78,8 @@ export const mintNFT = async (url, name, description) => {
     }
     const tokenURI = pinataResponse.pinataUrl;
 
-    // For loading smart contract    
+    // For loading smart contract  
+      
     window.contract = await new web3.eth.Contract(contractABI, contractAddress);
 
     // Setting up Ethereum transaction
