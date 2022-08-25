@@ -1,7 +1,6 @@
 import { pinJSONToIPFS } from './pinata.js';
 
 require('dotenv').config();
-
 const alchemyKey = process.env.REACT_APP_ALCHEMY_KEY;
 
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
@@ -92,7 +91,7 @@ export const mintNFT = async (url, name, description) => {
     };
 
     // Sign the transaction via MetaMask   
-     
+
     try {
         const txHash = await window.ethereum
             .request({
