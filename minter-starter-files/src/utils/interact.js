@@ -67,7 +67,8 @@ export const mintNFT = async (url, name, description) => {
     metadata.image = url;
     metadata.description = description;
 
-    // Pinata pin request        
+    // Pinata pin request  
+          
     const pinataResponse = await pinJSONToIPFS(metadata);
     if (!pinataResponse.success) {
         return {
