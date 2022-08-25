@@ -83,6 +83,7 @@ export const mintNFT = async (url, name, description) => {
     window.contract = await new web3.eth.Contract(contractABI, contractAddress);
 
     // Setting up Ethereum transaction
+
     const transactionParameters = {
         to: contractAddress, // Required except during contract publications
         from: window.ethereum.selectedAddress, // Must match user's active address
@@ -90,7 +91,8 @@ export const mintNFT = async (url, name, description) => {
     
     };
 
-    // Sign the transaction via MetaMask    
+    // Sign the transaction via MetaMask   
+     
     try {
         const txHash = await window.ethereum
             .request({
