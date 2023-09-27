@@ -13,8 +13,9 @@ const contractABI = require('../contract-abi.json');
 const contractAddress = "0xe8b00e6d6de63a9c4d3d3b881d2199505eb03c5c";
 
 export const connectWallet = async () => {
-    
+
     if (window.ethereum) {
+        
         try { 
             const addressArray = await window.ethereum.request({
                 method: "eth_requestAccounts",
