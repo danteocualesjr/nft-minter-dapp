@@ -43,6 +43,7 @@ export const connectWallet = async () => {
                 status: "😥 " + err.message,
                 
             };
+            
          }
     }   else {
         return {
