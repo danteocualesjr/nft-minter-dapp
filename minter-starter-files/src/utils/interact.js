@@ -85,8 +85,9 @@ export const mintNFT = async (url, name, description) => {
     // Error handling
 
     if (url.trim() == "" || (name.trim() == "" || description.trim() == "")) {
-        
+
         return {
+            
             success: false,
         }
             status: "❗ Please make sure to complete all fields before minting.",
