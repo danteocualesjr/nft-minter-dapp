@@ -87,7 +87,7 @@ export const mintNFT = async (url, name, description) => {
     if (url.trim() == "" || (name.trim() == "" || description.trim() == "")) {
 
         return {
-            
+
             success: false,
         }
             status: "❗ Please make sure to complete all fields before minting.",
@@ -96,6 +96,7 @@ export const mintNFT = async (url, name, description) => {
     // Make metadata
     
     const metadata = new Object();
+    
     metadata.name = name;
     metadata.image = url;
     metadata.description = description;
