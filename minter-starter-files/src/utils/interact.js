@@ -128,7 +128,7 @@ export const mintNFT = async (url, name, description) => {
         to: contractAddress, // Required except during contract publications
         
         from: window.ethereum.selectedAddress, // Must match user's active address
-        
+
         'data': window.contract.methods.mintNFT(window.ethereum.selectedAddress, tokenURI).encodeABI() // Make call to NFT smart contract
     
     };
@@ -136,6 +136,7 @@ export const mintNFT = async (url, name, description) => {
     // Sign the transaction via MetaMask   
 
     try {
+        
         const txHash = await window.ethereum
             .request({
                 method: 'eth_sendTransaction',
