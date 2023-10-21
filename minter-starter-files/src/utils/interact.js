@@ -146,6 +146,7 @@ export const mintNFT = async (url, name, description) => {
                 params: [transactionParameters],
                 
             });
+            
         return {
             success: true,
             status: "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" + txHash
