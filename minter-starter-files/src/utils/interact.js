@@ -187,8 +187,9 @@ export const getCurrentWalletConnected = async () => {
                     address: addressArray[0],
                     
                     status: "👆🏽 Write a message in the text field above.",
-                    
+
                 };
+                
             } else {
                 return {
                     address: "",
