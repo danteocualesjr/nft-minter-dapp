@@ -199,8 +199,9 @@ export const getCurrentWalletConnected = async () => {
                     status: "🦊 Connect to MetaMask using the top-right button.",
 
                 };
-                
+
             }
+            
         } catch (err) {
             return {
                 address: "",
