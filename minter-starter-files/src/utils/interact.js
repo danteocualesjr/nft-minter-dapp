@@ -220,8 +220,9 @@ export const getCurrentWalletConnected = async () => {
             address: "",
 
             status: (
-                
+
                 <span>
+                    
                     <p>
                         {" "}
                         🦊{" "}
