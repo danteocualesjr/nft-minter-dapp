@@ -240,6 +240,7 @@ export const getCurrentWalletConnected = async () => {
                 </span>
                 
             ),
+            
         };
     }
 
