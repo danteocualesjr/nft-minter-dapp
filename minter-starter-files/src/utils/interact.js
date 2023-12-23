@@ -39,8 +39,7 @@ export const connectWallet = async () => {
                 </span>  
             ),
         };
-    }
-    
+    }    
 }
 
 export const mintNFT = async (url, name, description) => {
