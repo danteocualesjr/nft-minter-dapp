@@ -76,7 +76,6 @@ export const mintNFT = async (url, name, description) => {
     window.contract = await new web3.eth.Contract(contractABI, contractAddress);
 
     // Setting up Ethereum transaction
-
     const transactionParameters = {
 
         to: contractAddress, // Required except during contract publications
