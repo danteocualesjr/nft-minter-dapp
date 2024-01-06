@@ -96,7 +96,6 @@ export const mintNFT = async (url, name, description) => {
         }
 
     }   catch (error) {
-
             return {
                 
                 success: false,
