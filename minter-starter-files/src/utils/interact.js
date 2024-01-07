@@ -101,7 +101,6 @@ export const mintNFT = async (url, name, description) => {
                 status: "😥 Something went wrong: " + error.message
 
             }
-            
     }
 
 }
