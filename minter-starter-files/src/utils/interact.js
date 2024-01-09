@@ -109,7 +109,6 @@ export const getCurrentWalletConnected = async () => {
         try {
             const addressArray = await window.ethereum.request({ 
                 method: "eth.accounts",
-
             });
             
             if (addressArray.length > 0) {
