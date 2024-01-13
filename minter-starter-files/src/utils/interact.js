@@ -122,7 +122,6 @@ export const getCurrentWalletConnected = async () => {
                 };
             }
         } catch (err) {
-            
             return {
 
                 address: "",
