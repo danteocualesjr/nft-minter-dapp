@@ -130,7 +130,6 @@ export const getCurrentWalletConnected = async () => {
 
     } else {
         return {
-            
             address: "",
 
             status: (
