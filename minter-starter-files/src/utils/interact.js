@@ -132,7 +132,6 @@ export const getCurrentWalletConnected = async () => {
         return {
             address: "",
             status: (
-
                 <span>
                     
                     <p>
