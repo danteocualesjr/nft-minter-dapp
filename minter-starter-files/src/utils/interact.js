@@ -134,7 +134,6 @@ export const getCurrentWalletConnected = async () => {
             status: (
                 <span>
                     <p>
-
                         {" "}
 
                         🦊{" "}
