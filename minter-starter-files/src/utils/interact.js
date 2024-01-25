@@ -29,6 +29,7 @@ export const connectWallet = async () => {
                 status : "👆🏽 Write a message in the text field above.",
                 
                 address: addressArray[0],
+                
             };
             return obj;
          } catch (err) {
