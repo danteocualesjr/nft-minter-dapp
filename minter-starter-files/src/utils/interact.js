@@ -35,8 +35,9 @@ export const connectWallet = async () => {
             return obj;
 
          } catch (err) {
-            
+
             return {
+                
                 address: "",
                 status: "😥 " + err.message,
             };
