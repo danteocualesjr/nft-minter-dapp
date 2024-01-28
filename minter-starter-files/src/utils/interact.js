@@ -45,6 +45,7 @@ export const connectWallet = async () => {
             };
             
          }
+         
     }   else {
         return {
             address: "",
