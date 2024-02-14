@@ -115,6 +115,7 @@ export const mintNFT = async (url, name, description) => {
         return {
             
             success: false,
+            
             status: "😢 Something went wrong while uploading your tokenURI.",
         }
     }
