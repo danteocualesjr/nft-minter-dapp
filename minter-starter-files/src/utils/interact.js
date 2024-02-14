@@ -119,8 +119,9 @@ export const mintNFT = async (url, name, description) => {
             status: "😢 Something went wrong while uploading your tokenURI.",
 
         }
-        
+
     }
+    
     const tokenURI = pinataResponse.pinataUrl;
 
     // For loading smart contract  
