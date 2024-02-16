@@ -141,6 +141,7 @@ export const mintNFT = async (url, name, description) => {
     };
 
     // Sign the transaction via MetaMask   
+    
     try {
         const txHash = await window.ethereum
             .request({
