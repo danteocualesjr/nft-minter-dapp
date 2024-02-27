@@ -185,8 +185,9 @@ export const getCurrentWalletConnected = async () => {
                 method: "eth.accounts",
                 
             });
-            
+
             if (addressArray.length > 0) {
+                
                 return {
                     address: addressArray[0],
                     status: "👆🏽 Write a message in the text field above.",
