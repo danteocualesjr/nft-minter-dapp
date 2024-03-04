@@ -215,6 +215,7 @@ export const getCurrentWalletConnected = async () => {
                 address: "",
                 
                 status: "😥 " + err.message,
+                
             };
         }
 
