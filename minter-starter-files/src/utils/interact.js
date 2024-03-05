@@ -229,8 +229,9 @@ export const getCurrentWalletConnected = async () => {
             status: (
                 
                 <span>
-                
+
                     <p>
+                    
                         {" "}
                         🦊{" "}
                         <a target ="_blank" href={`https://metamask.io/download.html`}>
