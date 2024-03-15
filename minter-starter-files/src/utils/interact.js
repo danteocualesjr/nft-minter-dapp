@@ -19,7 +19,6 @@ export const connectWallet = async () => {
             };
             return obj;
          } catch (err) {
-
             return {
                 
                 address: "",
