@@ -14,7 +14,6 @@ export const connectWallet = async () => {
                 method: "eth_requestAccounts",
             });
             const obj = {
-
                 status : "👆🏽 Write a message in the text field above.",
                 
                 address: addressArray[0],
