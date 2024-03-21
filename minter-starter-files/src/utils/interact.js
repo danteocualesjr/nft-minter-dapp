@@ -29,7 +29,6 @@ export const connectWallet = async () => {
             address: "",
             status: (
                 <span>
-
                     <p>
                     
                         {" "}
