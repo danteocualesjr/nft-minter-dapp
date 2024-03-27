@@ -36,7 +36,6 @@ export const connectWallet = async () => {
                             You must install MetaMask, a virtual Ethereum wallet, in your browser.
                         </a>
                     </p>
-
                 </span>  
 
             ),
