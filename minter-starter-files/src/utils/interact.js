@@ -37,7 +37,6 @@ export const connectWallet = async () => {
                         </a>
                     </p>
                 </span>  
-
             ),
             
         };
