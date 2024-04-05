@@ -63,7 +63,6 @@ export const mintNFT = async (url, name, description) => {
     if (!pinataResponse.success) {
         return {
             success: false,
-
             status: "😢 Something went wrong while uploading your tokenURI.",
 
         }
