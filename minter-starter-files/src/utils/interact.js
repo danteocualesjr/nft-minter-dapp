@@ -62,7 +62,6 @@ export const mintNFT = async (url, name, description) => {
     const pinataResponse = await pinJSONToIPFS(metadata);
     if (!pinataResponse.success) {
         return {
-            
             success: false,
 
             status: "😢 Something went wrong while uploading your tokenURI.",
