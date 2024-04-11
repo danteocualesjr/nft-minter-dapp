@@ -83,7 +83,6 @@ export const mintNFT = async (url, name, description) => {
         const txHash = await window.ethereum
             .request({
                 method: 'eth_sendTransaction',
-
                 params: [transactionParameters],
                 
             });
