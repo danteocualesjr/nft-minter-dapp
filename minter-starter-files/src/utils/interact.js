@@ -84,7 +84,6 @@ export const mintNFT = async (url, name, description) => {
             .request({
                 method: 'eth_sendTransaction',
                 params: [transactionParameters],
-                
             });
 
         return {
