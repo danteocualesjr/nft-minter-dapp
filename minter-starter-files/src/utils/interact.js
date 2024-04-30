@@ -55,6 +55,7 @@ export const connectWallet = async () => {
             status: (
                 
                 <span>
+                
                     <p>
                         {" "}
                         🦊 {" "}
