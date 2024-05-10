@@ -27,6 +27,7 @@ const Minter = (props) => {
   useEffect(async () => { //TODO: implement
     
     const { address, status } = await getCurrentWalletConnected();
+    
     setWallet(address);
     setStatus(status);    
     addWalletListener();             
