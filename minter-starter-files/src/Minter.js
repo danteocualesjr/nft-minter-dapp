@@ -19,6 +19,7 @@ const Minter = (props) => {
   const [status, setStatus] = useState("");
   
   const [name, setName] = useState("");
+  
   const [description, setDescription] = useState("");
   const [url, setURL] = useState("");
  
