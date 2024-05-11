@@ -33,12 +33,13 @@ const Minter = (props) => {
     setStatus(status);    
     
     addWalletListener();  
-               
+
   }, []);
 
   function addWalletListener() {
 
     if (window.ethereum) {
+      
       window.ethereum.on("accountsChanged", (accounts) => {
         if (accounts.length > 0) {
           setWallet(accounts[0]);
