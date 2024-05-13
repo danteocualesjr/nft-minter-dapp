@@ -55,8 +55,9 @@ const Minter = (props) => {
           setStatus("🦊 Connect to MetaMask using the top right button.");
           
         }
-        
+
       });
+      
     } else {
       setStatus(
         <p>
