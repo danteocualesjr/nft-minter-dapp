@@ -47,8 +47,9 @@ const Minter = (props) => {
           setWallet(accounts[0]);
 
           setStatus("👆🏽 Write a message in the text field above.");
-          
+
         } else {
+          
           setWallet("");
           setStatus("🦊 Connect to MetaMask using the top right button.");
         }
