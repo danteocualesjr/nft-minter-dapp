@@ -57,8 +57,9 @@ const Minter = (props) => {
         }
 
       });
-      
+
     } else {
+      
       setStatus(
         <p>
           {" "}
