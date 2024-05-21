@@ -73,8 +73,9 @@ const Minter = (props) => {
             You must install MetaMask, a virtual Ethereum wallet, in your browser.
             
           </a>
-          
+
         </p>
+        
       );
     }    
 
