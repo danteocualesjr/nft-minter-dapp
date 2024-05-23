@@ -77,6 +77,7 @@ const Minter = (props) => {
         </p>
         
       );
+      
     }    
 
   }
