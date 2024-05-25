@@ -95,7 +95,7 @@ const Minter = (props) => {
   const onMintPressed = async () => { //TODO: implement
 
     const { status } = await mintNFT (url, name, description);
-    
+
     setStatus(status);       
 
   };
@@ -103,6 +103,7 @@ const Minter = (props) => {
   return (
 
     <div className="Minter">
+      
       <button id="walletButton" onClick={connectWalletPressed}>
         {walletAddress.length > 0 ? (
           "Connected: " +
