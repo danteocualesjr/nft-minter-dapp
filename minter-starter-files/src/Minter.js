@@ -105,8 +105,9 @@ const Minter = (props) => {
     <div className="Minter">
       
       <button id="walletButton" onClick={connectWalletPressed}>
-      
+
         {walletAddress.length > 0 ? (
+          
           "Connected: " +
           String(walletAddress).substring(0, 6) +
           "..." +
