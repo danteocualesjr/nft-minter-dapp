@@ -109,8 +109,9 @@ const Minter = (props) => {
         {walletAddress.length > 0 ? (
 
           "Connected: " +
-          
+
           String(walletAddress).substring(0, 6) +
+          
           "..." +
           String(walletAddress).substring(38)
         ) : (
