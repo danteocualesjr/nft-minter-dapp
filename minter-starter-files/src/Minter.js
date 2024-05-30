@@ -117,6 +117,7 @@ const Minter = (props) => {
           String(walletAddress).substring(38)
           
         ) : (
+          
           <span>Connect Wallet</span>
         )}
       </button>
