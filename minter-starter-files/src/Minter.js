@@ -119,6 +119,7 @@ const Minter = (props) => {
         ) : (
           
           <span>Connect Wallet</span>
+          
         )}
       </button>
 
