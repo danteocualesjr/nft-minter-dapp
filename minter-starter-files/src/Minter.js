@@ -127,6 +127,7 @@ const Minter = (props) => {
       <br></br>
       
       <h1 id="title">🧙‍♂️ FastMint: A fast way to mint your NFTs</h1>
+      
       <p>
         Simply add your asset's link, name, and description, then press "Mint."
       </p>
