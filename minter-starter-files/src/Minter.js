@@ -135,8 +135,9 @@ const Minter = (props) => {
       </p>
 
       <form>
-        
+
         <h2>🖼 Link to asset: </h2>
+        
         <input
           type="text"
           placeholder="e.g. https://gateway.pinata.cloud/ipfs/<hash>"
