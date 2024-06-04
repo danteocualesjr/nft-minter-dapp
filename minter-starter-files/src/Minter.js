@@ -133,6 +133,7 @@ const Minter = (props) => {
         Simply add your asset's link, name, and description, then press "Mint."
         
       </p>
+      
       <form>
         <h2>🖼 Link to asset: </h2>
         <input
