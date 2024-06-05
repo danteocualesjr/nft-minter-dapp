@@ -139,8 +139,9 @@ const Minter = (props) => {
         <h2>🖼 Link to asset: </h2>
         
         <input
-        
+
           type="text"
+          
           placeholder="e.g. https://gateway.pinata.cloud/ipfs/<hash>"
           onChange={(event) => setURL(event.target.value)}
         />
