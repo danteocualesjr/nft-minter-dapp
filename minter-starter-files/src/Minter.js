@@ -143,6 +143,7 @@ const Minter = (props) => {
           type="text"
           
           placeholder="e.g. https://gateway.pinata.cloud/ipfs/<hash>"
+          
           onChange={(event) => setURL(event.target.value)}
         />
         <h2>🤔 Name: </h2>
