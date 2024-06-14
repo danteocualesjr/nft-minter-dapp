@@ -167,8 +167,9 @@ const Minter = (props) => {
           type="text"
 
           placeholder="e.g. Even cooler than cryptokitties ;)"
-          
+
           onChange={(event) => setDescription(event.target.value)}
+          
         />
       </form>
       <button id="mintButton" onClick={onMintPressed}>
