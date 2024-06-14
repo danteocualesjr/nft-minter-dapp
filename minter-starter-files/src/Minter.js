@@ -165,8 +165,9 @@ const Minter = (props) => {
         <input
         
           type="text"
-          
+
           placeholder="e.g. Even cooler than cryptokitties ;)"
+          
           onChange={(event) => setDescription(event.target.value)}
         />
       </form>
